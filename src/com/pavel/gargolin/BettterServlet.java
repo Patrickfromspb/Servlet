@@ -19,7 +19,7 @@ public class BettterServlet extends HttpServlet {
     public void init()throws ServletException
     {
 // Do required initialization
-
+        int i=0;
     }
     public void destroy() {
 
