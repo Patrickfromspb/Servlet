@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>com.pavel.gargolin.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BettterServlet</servlet-name>
+        <servlet-class>com.pavel.gargolin.BettterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BettterServlet</servlet-name>
+        <url-pattern>/france</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BServlet</servlet-name>
+        <servlet-class>com.pavel.gargolin.BServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BServlet</servlet-name>
+        <url-pattern>/bbb</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Quque</servlet-name>
+        <servlet-class>com.pavel.gargolin.Quque</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Quque</servlet-name>
+        <url-pattern>/quque</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
